@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mapfileexportdlg.ui'
+# Form implementation generated from reading ui file 'tinyowsxmlgenerator.ui'
 #
-# Created: Sat Feb 21 10:53:35 2015
+# Created: Sat Feb 21 16:55:56 2015
 #      by: PyQt4 UI code generator 4.11.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -310,9 +310,9 @@ class Ui_TinyowsXmlGenerator(object):
         self.txtContactName = QtGui.QLineEdit(self.tab_5)
         self.txtContactName.setObjectName(_fromUtf8("txtContactName"))
         self.gridLayout_31.addWidget(self.txtContactName, 0, 1, 1, 1)
-        self.txtContactPosition_2 = QtGui.QLineEdit(self.tab_5)
-        self.txtContactPosition_2.setObjectName(_fromUtf8("txtContactPosition_2"))
-        self.gridLayout_31.addWidget(self.txtContactPosition_2, 2, 3, 1, 1)
+        self.txtContactPhone = QtGui.QLineEdit(self.tab_5)
+        self.txtContactPhone.setObjectName(_fromUtf8("txtContactPhone"))
+        self.gridLayout_31.addWidget(self.txtContactPhone, 2, 3, 1, 1)
         self.label_121 = QtGui.QLabel(self.tab_5)
         self.label_121.setObjectName(_fromUtf8("label_121"))
         self.gridLayout_31.addWidget(self.label_121, 4, 0, 1, 1)
@@ -407,9 +407,9 @@ class Ui_TinyowsXmlGenerator(object):
         self.txtContactName1 = QtGui.QLineEdit(self.tab_6)
         self.txtContactName1.setObjectName(_fromUtf8("txtContactName1"))
         self.gridLayout_32.addWidget(self.txtContactName1, 0, 1, 1, 1)
-        self.txtContactPosition_21 = QtGui.QLineEdit(self.tab_6)
-        self.txtContactPosition_21.setObjectName(_fromUtf8("txtContactPosition_21"))
-        self.gridLayout_32.addWidget(self.txtContactPosition_21, 2, 3, 1, 1)
+        self.txtContactPosition_2 = QtGui.QLineEdit(self.tab_6)
+        self.txtContactPosition_2.setObjectName(_fromUtf8("txtContactPosition_2"))
+        self.gridLayout_32.addWidget(self.txtContactPosition_2, 2, 3, 1, 1)
         self.label_122 = QtGui.QLabel(self.tab_6)
         self.label_122.setObjectName(_fromUtf8("label_122"))
         self.gridLayout_32.addWidget(self.label_122, 4, 0, 1, 1)
@@ -468,8 +468,8 @@ class Ui_TinyowsXmlGenerator(object):
         TinyowsXmlGenerator.setTabOrder(self.txtContactSite, self.txtContactEmail)
         TinyowsXmlGenerator.setTabOrder(self.txtContactEmail, self.txtContactIndividualName)
         TinyowsXmlGenerator.setTabOrder(self.txtContactIndividualName, self.txtContactPosition)
-        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition, self.txtContactPosition_2)
-        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition_2, self.txtContactFax)
+        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition, self.txtContactPhone)
+        TinyowsXmlGenerator.setTabOrder(self.txtContactPhone, self.txtContactFax)
         TinyowsXmlGenerator.setTabOrder(self.txtContactFax, self.txtContactOnlineResource)
         TinyowsXmlGenerator.setTabOrder(self.txtContactOnlineResource, self.txtContactAddress)
         TinyowsXmlGenerator.setTabOrder(self.txtContactAddress, self.txtContactPostcode)
@@ -483,8 +483,8 @@ class Ui_TinyowsXmlGenerator(object):
         TinyowsXmlGenerator.setTabOrder(self.txtContactSite, self.txtContactEmail)
         TinyowsXmlGenerator.setTabOrder(self.txtContactEmail, self.txtContactIndividualName)
         TinyowsXmlGenerator.setTabOrder(self.txtContactIndividualName, self.txtContactPosition)
-        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition, self.txtContactPosition_2)
-        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition_2, self.txtContactFax)
+        TinyowsXmlGenerator.setTabOrder(self.txtContactPosition, self.txtContactPhone)
+        TinyowsXmlGenerator.setTabOrder(self.txtContactPhone, self.txtContactFax)
         TinyowsXmlGenerator.setTabOrder(self.txtContactFax, self.txtContactOnlineResource)
         TinyowsXmlGenerator.setTabOrder(self.txtContactOnlineResource, self.txtContactAddress)
         TinyowsXmlGenerator.setTabOrder(self.txtContactAddress, self.txtContactPostcode)
