@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Gary Sherman</author>
+ <class>TinyowsXmlGenerator</class>
+ <widget class="QDialog" name="TinyowsXmlGenerator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>729</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TinyOws XML Generator</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Tinyows</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>schema_dir*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>expose_pk</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>online_resource*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txtTinyowsLogLevel_2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtTinyowsOnlineResource"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txtTinyowsLog"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtXmlConfigFilePath">
+         <property name="toolTip">
+          <string>Name for the map file to be created from the QGIS project file</string>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLineEdit" name="txtTinyowsCheckValidGeom"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="txtTinyowsCheckSchema"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>meter_precision</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="txtTinyowsEstimatedExtent"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txtTinyowsMeterPrecision"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="txtTinyowsLogLevel">
+         <property name="text">
+          <string>log_level</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtTinyowsDegreePrecision"/>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLineEdit" name="txtTinyowsExposePk"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>check_schema</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="txtTinyowsEncoding"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>wfs_default_version</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>encoding</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>estimated_extent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>log</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>XML config file</string>
+         </property>
+         <property name="buddy">
+          <cstring>txtXmlConfigFilePath</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="txtTinyowsSchemaDir"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>degree_precision</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>display_bbox</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>check_valid_geom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="txtTinyowsWfsDefaultVersion"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txtTinyowsDisplayBbox"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QToolButton" name="btnChooseFile">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>150</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Postgresql</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtPostgresPassword"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="txtPostgresUser"/>
+       </item>
+       <item row="3" column="0" colspan="3">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>300</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>host</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="txtPostgresDbname"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>dbname</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>password</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>user</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtPostgresHost"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>encoding</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txtPostgresPort"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txtPostgresEncoding"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Metadata</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="txtMetadataAccessConstraints"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>access_constraints</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtMetadataName"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txtMetadataTitle"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="text">
+          <string>keywords</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txtMetadataKeywords"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_23">
+         <property name="text">
+          <string>fees</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="txtMetadataFees"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>title*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>300</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Limits</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtLimitsFeatures"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txtLimitsGeobbox"/>
+       </item>
+       <item row="4" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>400</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="features">
+         <property name="text">
+          <string>features</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>geobbox</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Contact</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="6" column="3">
+        <widget class="QLineEdit" name="txtContactHoursOfService"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="txtContactCountry"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtContactFax"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>postcode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>170</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="txtContactContactInstructions"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>contact_instructions</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="txtContactPostcode"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="txtContactIndividualName"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txtContactOnlineResource"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLineEdit" name="txtContactAdministrativeArea"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>country</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>online_resource</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>email*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txtContactPosition"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txtContactAddress"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="txtTinyowsLogLevel">
+         <property name="text">
+          <string>individual_name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>administrative_area</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtContactEmail"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>fax</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>city</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtContactName"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txtContactPosition_2"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>address</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="txtContactCity"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>phone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>site*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="txtContactSite"/>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>hours_of_service</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Layer</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="6" column="3">
+        <widget class="QLineEdit" name="txtContactHoursOfService"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="txtContactCountry"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txtContactFax"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>postcode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>170</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="txtContactContactInstructions"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>contact_instructions</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="txtContactPostcode"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="txtContactIndividualName"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txtContactOnlineResource"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLineEdit" name="txtContactAdministrativeArea"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>country</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>online_resource</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>email*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txtContactPosition"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txtContactAddress"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="txtTinyowsLogLevel">
+         <property name="text">
+          <string>individual_name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>administrative_area</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtContactEmail"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>fax</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>city</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtContactName"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txtContactPosition_2"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>address</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="txtContactCity"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>phone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>site*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="txtContactSite"/>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>hours_of_service</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>txtXmlConfigFilePath</tabstop>
+  <tabstop>txtTinyowsOnlineResource</tabstop>
+  <tabstop>txtTinyowsSchemaDir</tabstop>
+  <tabstop>txtTinyowsLog</tabstop>
+  <tabstop>txtTinyowsLogLevel_2</tabstop>
+  <tabstop>txtTinyowsDegreePrecision</tabstop>
+  <tabstop>txtTinyowsMeterPrecision</tabstop>
+  <tabstop>txtTinyowsDisplayBbox</tabstop>
+  <tabstop>txtTinyowsEstimatedExtent</tabstop>
+  <tabstop>txtTinyowsCheckSchema</tabstop>
+  <tabstop>txtTinyowsCheckValidGeom</tabstop>
+  <tabstop>txtTinyowsEncoding</tabstop>
+  <tabstop>txtTinyowsExposePk</tabstop>
+  <tabstop>txtTinyowsWfsDefaultVersion</tabstop>
+  <tabstop>txtPostgresHost</tabstop>
+  <tabstop>txtPostgresUser</tabstop>
+  <tabstop>txtPostgresPassword</tabstop>
+  <tabstop>txtPostgresDbname</tabstop>
+  <tabstop>txtPostgresPort</tabstop>
+  <tabstop>txtPostgresEncoding</tabstop>
+  <tabstop>txtMetadataName</tabstop>
+  <tabstop>txtMetadataTitle</tabstop>
+  <tabstop>txtMetadataKeywords</tabstop>
+  <tabstop>txtMetadataFees</tabstop>
+  <tabstop>txtMetadataAccessConstraints</tabstop>
+  <tabstop>txtLimitsFeatures</tabstop>
+  <tabstop>txtLimitsGeobbox</tabstop>
+  <tabstop>txtContactName</tabstop>
+  <tabstop>txtContactSite</tabstop>
+  <tabstop>txtContactEmail</tabstop>
+  <tabstop>txtContactIndividualName</tabstop>
+  <tabstop>txtContactPosition</tabstop>
+  <tabstop>txtContactPosition_2</tabstop>
+  <tabstop>txtContactFax</tabstop>
+  <tabstop>txtContactOnlineResource</tabstop>
+  <tabstop>txtContactAddress</tabstop>
+  <tabstop>txtContactPostcode</tabstop>
+  <tabstop>txtContactCity</tabstop>
+  <tabstop>txtContactAdministrativeArea</tabstop>
+  <tabstop>txtContactCountry</tabstop>
+  <tabstop>txtContactHoursOfService</tabstop>
+  <tabstop>txtContactContactInstructions</tabstop>
+  <tabstop>txtContactName</tabstop>
+  <tabstop>txtContactSite</tabstop>
+  <tabstop>txtContactEmail</tabstop>
+  <tabstop>txtContactIndividualName</tabstop>
+  <tabstop>txtContactPosition</tabstop>
+  <tabstop>txtContactPosition_2</tabstop>
+  <tabstop>txtContactFax</tabstop>
+  <tabstop>txtContactOnlineResource</tabstop>
+  <tabstop>txtContactAddress</tabstop>
+  <tabstop>txtContactPostcode</tabstop>
+  <tabstop>txtContactCity</tabstop>
+  <tabstop>txtContactAdministrativeArea</tabstop>
+  <tabstop>txtContactCountry</tabstop>
+  <tabstop>txtContactHoursOfService</tabstop>
+  <tabstop>txtContactContactInstructions</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>btnChooseFile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TinyowsXmlGenerator</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TinyowsXmlGenerator</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

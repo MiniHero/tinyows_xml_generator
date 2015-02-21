@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/tinyows_xml_generator">
+        <file alias="icons/logo">icons/logo.png</file>
+        <file alias="icons/about">icons/about.png</file>
+    </qresource>
+</RCC>
