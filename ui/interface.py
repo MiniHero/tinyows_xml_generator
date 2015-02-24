@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'tinyowsxmlgenerator.ui'
 #
-# Created: Mon Feb 23 19:45:14 2015
+# Created: Mon Feb 23 20:05:33 2015
 #      by: PyQt4 UI code generator 4.11.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -169,15 +169,9 @@ class Ui_TinyowsXmlGenerator(object):
         self.label_18 = QtGui.QLabel(self.tab_2)
         self.label_18.setObjectName(_fromUtf8("label_18"))
         self.gridLayout_7.addWidget(self.label_18, 2, 0, 1, 1)
-        self.label_19 = QtGui.QLabel(self.tab_2)
-        self.label_19.setObjectName(_fromUtf8("label_19"))
-        self.gridLayout_7.addWidget(self.label_19, 2, 2, 1, 1)
         self.txtPostgresPort = QtGui.QLineEdit(self.tab_2)
         self.txtPostgresPort.setObjectName(_fromUtf8("txtPostgresPort"))
         self.gridLayout_7.addWidget(self.txtPostgresPort, 2, 1, 1, 1)
-        self.txtPostgresEncoding = QtGui.QLineEdit(self.tab_2)
-        self.txtPostgresEncoding.setObjectName(_fromUtf8("txtPostgresEncoding"))
-        self.gridLayout_7.addWidget(self.txtPostgresEncoding, 2, 3, 1, 1)
         self.tabWidget.addTab(self.tab_2, _fromUtf8(""))
         self.tab_3 = QtGui.QWidget()
         self.tab_3.setObjectName(_fromUtf8("tab_3"))
@@ -273,8 +267,7 @@ class Ui_TinyowsXmlGenerator(object):
         TinyowsXmlGenerator.setTabOrder(self.txtPostgresUser, self.txtPostgresPassword)
         TinyowsXmlGenerator.setTabOrder(self.txtPostgresPassword, self.txtPostgresDbname)
         TinyowsXmlGenerator.setTabOrder(self.txtPostgresDbname, self.txtPostgresPort)
-        TinyowsXmlGenerator.setTabOrder(self.txtPostgresPort, self.txtPostgresEncoding)
-        TinyowsXmlGenerator.setTabOrder(self.txtPostgresEncoding, self.txtMetadataName)
+        TinyowsXmlGenerator.setTabOrder(self.txtPostgresPort, self.txtMetadataName)
         TinyowsXmlGenerator.setTabOrder(self.txtMetadataName, self.txtMetadataTitle)
         TinyowsXmlGenerator.setTabOrder(self.txtMetadataTitle, self.txtMetadataKeywords)
         TinyowsXmlGenerator.setTabOrder(self.txtMetadataKeywords, self.txtMetadataFees)
@@ -306,7 +299,6 @@ class Ui_TinyowsXmlGenerator(object):
         self.label_7.setText(_translate("TinyowsXmlGenerator", "password", None))
         self.label_3.setText(_translate("TinyowsXmlGenerator", "user", None))
         self.label_18.setText(_translate("TinyowsXmlGenerator", "port", None))
-        self.label_19.setText(_translate("TinyowsXmlGenerator", "encoding", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("TinyowsXmlGenerator", "Postgresql", None))
         self.label_24.setText(_translate("TinyowsXmlGenerator", "access_constraints", None))
         self.label_22.setText(_translate("TinyowsXmlGenerator", "keywords", None))
