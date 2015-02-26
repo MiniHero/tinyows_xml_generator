@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'tinyowsxmlgenerator.ui'
 #
-# Created: Mon Feb 23 20:05:33 2015
+# Created: Wed Feb 25 20:50:39 2015
 #      by: PyQt4 UI code generator 4.11.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -231,15 +231,15 @@ class Ui_TinyowsXmlGenerator(object):
         self.txtLayerRetrievable = QtGui.QLineEdit(self.tab_4)
         self.txtLayerRetrievable.setObjectName(_fromUtf8("txtLayerRetrievable"))
         self.gridLayout_31.addWidget(self.txtLayerRetrievable, 1, 1, 1, 1)
-        self.txtLayerNsPrefix = QtGui.QLineEdit(self.tab_4)
-        self.txtLayerNsPrefix.setObjectName(_fromUtf8("txtLayerNsPrefix"))
-        self.gridLayout_31.addWidget(self.txtLayerNsPrefix, 0, 1, 1, 1)
         self.label_51 = QtGui.QLabel(self.tab_4)
         self.label_51.setObjectName(_fromUtf8("label_51"))
         self.gridLayout_31.addWidget(self.label_51, 0, 2, 1, 1)
         self.txtLayerNsUri = QtGui.QLineEdit(self.tab_4)
         self.txtLayerNsUri.setObjectName(_fromUtf8("txtLayerNsUri"))
         self.gridLayout_31.addWidget(self.txtLayerNsUri, 0, 3, 1, 1)
+        self.txtLayerNsPrefix = QtGui.QLineEdit(self.tab_4)
+        self.txtLayerNsPrefix.setObjectName(_fromUtf8("txtLayerNsPrefix"))
+        self.gridLayout_31.addWidget(self.txtLayerNsPrefix, 0, 1, 1, 1)
         self.tabWidget.addTab(self.tab_4, _fromUtf8(""))
         self.gridLayout.addWidget(self.tabWidget, 1, 0, 1, 1)
         self.label.setBuddy(self.txtXmlConfigFilePath)
@@ -280,7 +280,11 @@ class Ui_TinyowsXmlGenerator(object):
         self.label_5.setText(_translate("TinyowsXmlGenerator", "schema_dir*", None))
         self.label_15.setText(_translate("TinyowsXmlGenerator", "expose_pk", None))
         self.label_4.setText(_translate("TinyowsXmlGenerator", "online_resource*", None))
+        self.txtTinyowsLogLevel_2.setText(_translate("TinyowsXmlGenerator", "15", None))
+        self.txtTinyowsOnlineResource.setText(_translate("TinyowsXmlGenerator", "http://127.0.0.1/cgi-bin/tinyows.exe", None))
+        self.txtTinyowsLog.setText(_translate("TinyowsXmlGenerator", "C:/inetpub/wwwroot/tinyows/tinyows.log", None))
         self.txtXmlConfigFilePath.setToolTip(_translate("TinyowsXmlGenerator", "Name for the map file to be created from the QGIS project file", None))
+        self.txtTinyowsCheckSchema.setText(_translate("TinyowsXmlGenerator", "0", None))
         self.label_9.setText(_translate("TinyowsXmlGenerator", "meter_precision", None))
         self.txtTinyowsLogLevel.setText(_translate("TinyowsXmlGenerator", "log_level", None))
         self.label_12.setText(_translate("TinyowsXmlGenerator", "check_schema", None))
@@ -289,6 +293,7 @@ class Ui_TinyowsXmlGenerator(object):
         self.label_11.setText(_translate("TinyowsXmlGenerator", "estimated_extent", None))
         self.label_6.setText(_translate("TinyowsXmlGenerator", "log", None))
         self.label.setText(_translate("TinyowsXmlGenerator", "XML config file", None))
+        self.txtTinyowsSchemaDir.setText(_translate("TinyowsXmlGenerator", "C:/inetpub/wwwroot/tinyows/schema/", None))
         self.label_8.setText(_translate("TinyowsXmlGenerator", "degree_precision", None))
         self.label_10.setText(_translate("TinyowsXmlGenerator", "display_bbox", None))
         self.label_13.setText(_translate("TinyowsXmlGenerator", "check_valid_geom", None))
@@ -301,14 +306,20 @@ class Ui_TinyowsXmlGenerator(object):
         self.label_18.setText(_translate("TinyowsXmlGenerator", "port", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("TinyowsXmlGenerator", "Postgresql", None))
         self.label_24.setText(_translate("TinyowsXmlGenerator", "access_constraints", None))
+        self.txtMetadataName.setText(_translate("TinyowsXmlGenerator", "TinyOWS Server", None))
+        self.txtMetadataTitle.setText(_translate("TinyowsXmlGenerator", "Demo", None))
         self.label_22.setText(_translate("TinyowsXmlGenerator", "keywords", None))
         self.label_23.setText(_translate("TinyowsXmlGenerator", "fees", None))
         self.label_20.setText(_translate("TinyowsXmlGenerator", "name*", None))
         self.label_21.setText(_translate("TinyowsXmlGenerator", "title*", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("TinyowsXmlGenerator", "Metadata", None))
+        self.txtLayerWritable.setText(_translate("TinyowsXmlGenerator", "1", None))
         self.label_41.setText(_translate("TinyowsXmlGenerator", "ns_prefix", None))
         self.label_61.setText(_translate("TinyowsXmlGenerator", "retrievable", None))
         self.txtTinyowsLogLevel1.setText(_translate("TinyowsXmlGenerator", "writable", None))
+        self.txtLayerRetrievable.setText(_translate("TinyowsXmlGenerator", "1", None))
         self.label_51.setText(_translate("TinyowsXmlGenerator", "ns_uri", None))
+        self.txtLayerNsUri.setText(_translate("TinyowsXmlGenerator", "http://www.tinyows.org", None))
+        self.txtLayerNsPrefix.setText(_translate("TinyowsXmlGenerator", "tows", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("TinyowsXmlGenerator", "Layer", None))
 

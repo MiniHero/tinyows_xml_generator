@@ -63,13 +63,25 @@
         </widget>
        </item>
        <item row="2" column="3">
-        <widget class="QLineEdit" name="txtTinyowsLogLevel_2"/>
+        <widget class="QLineEdit" name="txtTinyowsLogLevel_2">
+         <property name="text">
+          <string>15</string>
+         </property>
+        </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="txtTinyowsOnlineResource"/>
+        <widget class="QLineEdit" name="txtTinyowsOnlineResource">
+         <property name="text">
+          <string>http://127.0.0.1/cgi-bin/tinyows.exe</string>
+         </property>
+        </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="txtTinyowsLog"/>
+        <widget class="QLineEdit" name="txtTinyowsLog">
+         <property name="text">
+          <string>C:/inetpub/wwwroot/tinyows/tinyows.log</string>
+         </property>
+        </widget>
        </item>
        <item row="0" column="1">
         <widget class="QLineEdit" name="txtXmlConfigFilePath">
@@ -85,7 +97,11 @@
         <widget class="QLineEdit" name="txtTinyowsCheckValidGeom"/>
        </item>
        <item row="5" column="1">
-        <widget class="QLineEdit" name="txtTinyowsCheckSchema"/>
+        <widget class="QLineEdit" name="txtTinyowsCheckSchema">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
        </item>
        <item row="3" column="2">
         <widget class="QLabel" name="label_9">
@@ -162,7 +178,11 @@
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="txtTinyowsSchemaDir"/>
+        <widget class="QLineEdit" name="txtTinyowsSchemaDir">
+         <property name="text">
+          <string>C:/inetpub/wwwroot/tinyows/schema/</string>
+         </property>
+        </widget>
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="label_8">
@@ -305,10 +325,18 @@
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="txtMetadataName"/>
+        <widget class="QLineEdit" name="txtMetadataName">
+         <property name="text">
+          <string>TinyOWS Server</string>
+         </property>
+        </widget>
        </item>
        <item row="3" column="3">
-        <widget class="QLineEdit" name="txtMetadataTitle"/>
+        <widget class="QLineEdit" name="txtMetadataTitle">
+         <property name="text">
+          <string>Demo</string>
+         </property>
+        </widget>
        </item>
        <item row="4" column="0">
         <widget class="QLabel" name="label_22">
@@ -384,7 +412,11 @@
         </spacer>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="txtLayerWritable"/>
+        <widget class="QLineEdit" name="txtLayerWritable">
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
        </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label_4">
@@ -408,10 +440,11 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="txtLayerRetrievable"/>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="txtLayerNsPrefix"/>
+        <widget class="QLineEdit" name="txtLayerRetrievable">
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
        </item>
        <item row="0" column="2">
         <widget class="QLabel" name="label_5">
@@ -421,7 +454,18 @@
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QLineEdit" name="txtLayerNsUri"/>
+        <widget class="QLineEdit" name="txtLayerNsUri">
+         <property name="text">
+          <string>http://www.tinyows.org</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtLayerNsPrefix">
+         <property name="text">
+          <string>tows</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
